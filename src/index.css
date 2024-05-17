@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.intro{
+  background-image: url('/assets/images/bg1.png');
+  background-size: cover;
+
+}
+
+.nav-link{
+  color: black;
+}
+
+.contact-button{
+  color: #E2C100;
+}
+
+.title-text{
+  font-family: 'Abril Fatface', cursive; /* Add the font-family here */
+
+}
+
+.background{
+  background: linear-gradient(90deg, #8173F9 0%, #64CBEA 100%);
+
+  height: 500px
+}
+.title-name{
+  color: white !important;
+
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat-italic {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-25-charted-regular {
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.round-div{
+  min-height: 100px;
+  min-width: 500px;
+  padding: 20px;
+  border-radius: 50px; 
+  background-color: #ffda00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #888888; /* Optional: Adds a subtle shadow for depth */
+
+}
+
+.work{
+  border-radius:1rem;
+  position:relative;
+  overflow:hidden;
+  height:15rem;
+  margin-bottom:1.5rem;
+}
+
+.work img{
+  width:100%;
+  display:block;
+  transition:0.7s
+}
+
+.layer{
+  width:100%;
+  height:100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.63),#7C81F7);
+  border-radius:1rem;
+  position:absolute;
+  left:0;
+  bottom:-0.1%;
+  text-align:center;
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition:0.6s;
+}
+
+.layer h3{
+  font-weight:600;
+  margin:1rem 0;
+  font-size:1.5rem;
+}
+
+.layer p {
+  padding:0 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.layer a{
+  text-decoration:none;
+  margin-top:1rem;
+  color: #ffda00;
+  font-size:1.5rem;
+  background-color:white;
+  border-radius:50%;
+  padding:1rem 1.2rem;
+  text-align:center;
+}
+
+.work:hover img{
+  transform:scale(2);
+}
+
+.work:hover .layer{
+  bottom:0;
+}
+
+.skill-titles{
+  display:flex;
+  margin:1rem 0;
+}
+
+.skill-link{
+  margin-right:3rem;
+  font-weight:500;
+  cursor:pointer;
+  position:relative;
+}
+
+.skill-link::after{
+  width:0%;
+  background-color:orange;
+  content:'';
+  height:0.2rem;
+  position:absolute;
+  bottom:-0.3rem;
+  left:0;
+  transition:0.2s;
+}
+
+.skill-link:hover::after{
+  width:100%;
+}
+
+.active-link::after{
+  width:50%;
+}
+
+.tab-contents ul{
+  margin:2rem 0;
+}
+
+.tab-contents ul li{
+  list-style:none;
+  margin:1rem 0;
+}
+
+.tab-contents ul li span{
+  color:orange;
+}
+
+.tab-contents{
+  display:none;
+}
+
+.tab-contents.active-tab{
+  display:block;
+}
