@@ -2,9 +2,9 @@ import React from 'react';
 
 const ProjectGrid = () => {
   return (
-    <section id="projects" className="bg-gray-100 py-16">
+    <section id="projects" className="projects bg-gray-100 ">
       <div className="container mx-auto">
-        <h1 className="text-3xl text-center font-semibold mb-8">My Creations</h1>
+        <h1 className="text-3xl text-white space-mono-bold m-8 p-5">Portfolio</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="work relative">
             <img src="assets/images/taska.png" alt="Could not load image" className="w-full h-auto" />

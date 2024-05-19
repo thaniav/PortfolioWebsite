@@ -75,6 +75,12 @@
 
 }
 
+.projects{
+  background: linear-gradient(90deg, #8173F9 0%, #64CBEA 100%);
+
+}
+
+
 .work{
   border-radius:1rem;
   position:relative;
@@ -149,7 +155,7 @@
 
 .skill-link::after{
   width:0%;
-  background-color:orange;
+  background-color:#ffda00;
   content:'';
   height:0.2rem;
   position:absolute;
@@ -176,7 +182,7 @@
 }
 
 .tab-contents ul li span{
-  color:orange;
+  color:#ffda00;
 }
 
 .tab-contents{

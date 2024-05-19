@@ -4,7 +4,7 @@ import './index.css';  // Ensure Tailwind is imported here if it's not globally
 function Portfolio() {
   return (
     <>
-      <div className="intro max-w-7xl mx-auto px-4">
+      <div className="intro mx-auto px-4">
         <header className="flex space-mono-bold justify-end py-3 px-3">
           <div className="justify-start text-xl">Thania's Portfolio</div>
           <ul className="flex gap-8 ml-auto">
@@ -33,7 +33,7 @@ function Portfolio() {
             </div>
           </div>
           <div className="lg:flex lg:flex-col-reverse">
-            <img src="/assets/images/gradpic.png" alt="Graduation" className="w-full h-32 sm:h-48 md:h-64 lg:h-full object-cover"/>
+          <img src="/PortfolioWebsite/assets/images/gradpic.png" alt="Graduation" className="w-full h-32 sm:h-48 md:h-64 lg:h-full object-cover"/>
           </div>
         </div>
       </div>

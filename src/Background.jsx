@@ -9,21 +9,21 @@ function Background() {
     }
 
     return (
-        <section id="background" className='background montserrat-bold text-xl text-white p-5'>
-            <div className="skill-titles flex justify-around pt-8">
+        <section id="background" className='background space-mono-bold text-xl text-white my-5 p-5'>
+            <div className="skill-titles space-mono-bold flex justify-around pt-8">
                 <p 
                     className={`skill-link ${activeTab === 'experience' ? 'active-link' : ''}`} 
                     data-content="experience" 
                     onClick={() => handleTabClick('experience')}
                 >
-                    Experience
+                    EXPERIENCE
                 </p>
                 <p 
                     className={`skill-link ${activeTab === 'education' ? 'active-link' : ''}`} 
                     data-content="education" 
                     onClick={() => handleTabClick('education')}
                 >
-                    Education
+                    EDUCATION 
                 </p>
             </div>
 
@@ -41,7 +41,7 @@ function Background() {
                 </ul>
             </div>
         </section>
-    );
+    );                                                                     
 }
 
 export default Background;
