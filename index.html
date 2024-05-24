@@ -1,17 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Lustria&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thania's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thania's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Portfolio Section -->
+  <div class="intro mx-auto px-4">
+    <header class="flex space-mono-bold justify-end py-3 px-3">
+      <div class="justify-start text-xl">Thania's Portfolio</div>
+      <ul class="flex gap-8 ml-auto">
+        <li><a href="#" class="text-gray-700 hover:text-gray-900 transition-colors">Home</a></li>
+        <li><a href="#background" class="text-gray-700 hover:text-gray-900 transition-colors">Background</a></li>
+        <li><a href="#projects" class="text-gray-700 hover:text-gray-900 transition-colors">Projects</a></li>
+        <li><a href="#" class="text-yellow-600 hover:text-gray-900 transition-colors">Contact</a></li>
+      </ul>
+    </header>
+    <div class="flex flex-col lg:flex-row lg:items-center gap-5 py-3">
+      <div class="flex-1">
+        <div class="flex justify-center">
+          <div class="mb-5 round-div">
+            <h1 class="text-5xl space-mono-bold text-white m-3">THANIA VIVEK</h1>
+          </div>
+        </div>
+        <p class="lead space-mono-regular text-lg text-white m-4">Highly motivated student with a Masters in Advanced Computer Science in University of Sheffield with over a year of work experience in the financial IT sector.</p>
+        <div class="flex gap-2 justify-center mt-8">
+          <a href="assets/ThaniaV_CV.pdf" download="Thania_Vivek_Resume.pdf" class="px-9 py-6 text-lg font-medium rounded-xl border border-black hover:bg-white transition-colors">DOWNLOAD RESUME</a>
+        </div>
+      </div>
+      <div class="lg:flex lg:flex-col-reverse">
+        <img src="assets/images/gradpic.png" alt="Graduation" class="w-full h-32 sm:h-48 md:h-64 lg:h-full object-cover"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Section -->
+  <section id="background" class='background space-mono-bold text-xl text-white my-5 p-5'>
+    <div class="skill-titles space-mono-bold flex justify-around pt-8">
+      <p class='skill-link' data-content="experience" onclick="handleTabClick('experience')">EXPERIENCE</p>
+      <p class='skill-link' data-content="education" onclick="handleTabClick('education')">EDUCATION</p>
+    </div>
+    <div class='tab-contents pt-8' id="experience">
+      <ul>
+        <li><span>Java Developer </span><br /><li class='montserrat-italic'>Utilized Spring, Spring Boot, Java, and DB2 to develop robust and responsive applications for Morgan Stanley</li></li>
+        <li><span>Freelance Web developer</span><br /><li class='montserrat-italic'>Started a digital launchpad startup to provide web development services to startups and small businesses that require better UI/UX experiences.</li></li>
+      </ul>
+    </div>
+    <div class='tab-contents pt-8 hidden' id="education">
+      <ul>
+        <li><span>UNIVERSITY OF SHEFFIELD</span><br /><li class='montserrat-italic'>MSC. ADVANCED COMPUTER SCIENCE</li></li>
+        <li><span>AMRITA SCHOOL OF ENGINEERING</span><br /><li class='montserrat-italic'>First Class with Distinction<br />B.TECH. COMPUTER SCIENCE</li></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Project Grid Section -->
+  <section id="projects" class="projects bg-gray-100">
+    <div class="container mx-auto">
+      <h1 class="text-3xl text-white space-mono-bold m-8 p-5">Portfolio</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="work relative">
+          <img src="assets/images/taska.png" alt="Could not load image" class="w-full h-auto" />
+          <div class="layer absolute inset-0 bg-black opacity-50 flex flex-col justify-center items-center text-white transition duration-300 opacity-0 hover:opacity-100">
+            <h3 class="text-xl font-semibold mb-2">Taska</h3>
+            <p class="text-sm text-center">Created a landing page for UI/UX design services</p>
+            <a href="https://github.com/taska-workforce/taska-landing-page" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work relative">
+          <img src="assets/images/innogen.png" alt="Could not load image" class="w-full h-auto" />
+          <div class="layer absolute inset-0 bg-black opacity-50 flex flex-col justify-center items-center text-white transition duration-300 opacity-0 hover:opacity-100">
+            <h3 class="text-xl font-semibold mb-2">Innogen.in</h3>
+            <p class="text-sm text-center">Leveraged WordPress to build a website for a software service company that was hosted online</p>
+            <a href="https://innogen.in/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work relative">
+          <img src="assets/images/zerkses.png" alt="Could not load image" class="w-full h-auto" />
+          <div class="layer absolute inset-0 bg-black opacity-50 flex flex-col justify-center items-center text-white transition duration-300 opacity-0 hover:opacity-100">
+            <h3 class="text-xl font-semibold mb-2">Zerkses</h3>
+            <p class="text-sm text-center">A modern state of the art front-end page that was created using HTML and CSS</p>
+            <a href="https://zerkses.com/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="https://github.com/thaniav?tab=repositories" class="btn inline-block px-4 py-2 rounded-xl border border-black hover:bg-white transition-colors transition duration-300">See More</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
